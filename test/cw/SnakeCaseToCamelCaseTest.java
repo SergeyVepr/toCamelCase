@@ -55,7 +55,7 @@ class SnakeCaseToCamelCaseTest {
     }
 
     @Test
-    void snakeToCamel() {
+    void snakeToCamelFromSonya() {
         assertEquals("asvFghIop", SnakeCaseToCamelCase.toCamelCase("asv_fgh_iop"));
         assertEquals("asvFghIop", SnakeCaseToCamelCase.toCamelCase("_asv_fgh_iop"));
         assertEquals("asvFghIop", SnakeCaseToCamelCase.toCamelCase("asv_fgh_iop_"));
