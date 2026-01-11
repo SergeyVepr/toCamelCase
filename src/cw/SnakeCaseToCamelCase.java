@@ -9,7 +9,7 @@ public class SnakeCaseToCamelCase {
         boolean upperNext = false;
         for (int i = 0; i < s.length(); i++) {
             char c = s.charAt(i);
-            if(c == '_' && i == 0) continue;
+            if(c == '_' && i == 0 || Character.isSpaceChar(c) ) continue;
             if (c == '_') upperNext = true;
             else {
                 if (upperNext) {

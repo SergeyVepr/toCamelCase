@@ -61,6 +61,8 @@ class SnakeCaseToCamelCaseTest {
         assertEquals("asvFghIop", SnakeCaseToCamelCase.toCamelCase("asv_fgh_iop_"));
         assertEquals("asvFghIop", SnakeCaseToCamelCase.toCamelCase("asv__fgh_iop_"));
         assertEquals("asvFghIop", SnakeCaseToCamelCase.toCamelCase("ASV_FGH_IOP_"));
+        assertEquals("asvFghIop", SnakeCaseToCamelCase.toCamelCase("asv__ fgh_iop_"));
+
 
     }
 
